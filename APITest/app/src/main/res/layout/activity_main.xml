@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0px"
+        android:orientation="vertical"
+        android:background="@color/parking_gray"
+        tools:context=".MainActivity">
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:tabBackground="@drawable/selected_tabs"
+                    app:tabIndicatorColor="@color/parking_menu"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabSelectedTextColor="@color/parking_menu"
+                    app:tabTextColor="@color/parking_darkgray">
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/parking_gray"
+                    android:layout_height="520dp"
+                    android:layout_marginTop="0dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navview"
+        android:layout_width="430dp"
+        android:paddingTop="30dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/white"
+        android:backgroundTint="@color/parking_menu"
+        app:headerLayout="@layout/header_navigation_drawer"
+        app:menu="@menu/nav_options"
+        android:layout_gravity="start"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+

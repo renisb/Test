@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.ParkingFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="70px"
+        android:paddingRight="70px">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Numero da Palca"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <EditText
+            android:id="@+id/etLicense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="8"
+            android:background="@drawable/shape_edit_lincense"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:hint="AAA-0000"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/txtAlertError"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_txt_alert"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/alert"
+            android:textSize="15sp"
+            android:textColor="@color/alert_error_Text"
+            android:textAlignment="viewStart"
+            android:gravity="center"
+            android:text="  Numero incorreto"
+            android:visibility="gone"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_btn_enabled_entrance"
+            android:backgroundTint="@color/button_enabled_entrance"
+            android:enabled="false"
+            android:padding="14dp"
+            android:text="Confirmar"
+            android:textSize="18dp"
+            android:theme="@style/Button.Green" />
+
+    </LinearLayout>
+</FrameLayout>

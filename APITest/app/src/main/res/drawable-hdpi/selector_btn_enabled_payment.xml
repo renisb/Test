@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true"
+        android:drawable="@drawable/shape_btn_enable_payment"/>
+    <item android:state_enabled="false"
+        android:drawable="@drawable/shape_btn_disabled"/>
+</selector>-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressionado e Habilitado -->
+    <item android:state_enabled="true">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/button_enabled_payment"/>
+            <stroke android:width="1dp" android:color="@color/button_enabled_payment"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <!-- Habilitado e não pressionado -->
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/button_enabled_payment"/>
+            <stroke android:width="1dp" android:color="@color/button_enabled_payment"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <!-- Desabilitado -->
+    <item android:state_enabled="false">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/button_disable"/>
+            <stroke android:width="1dp" android:color="@color/button_disable"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</selector>

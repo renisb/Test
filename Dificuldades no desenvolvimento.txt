@@ -1,0 +1,30 @@
+Dificuldades no Desenvolvimento
+
+A maior dificuldade que encontrei foi implementar a API no Android Studio:
+-Nunca tinha implementado.
+-Não consegui implementar os registros de pagamentos, isso por que tentendei varias formulas diferentes
+(esta no package .api)
+-A função conection no ParkingFragment esta comentada se funcionasse iria ser dessa forma que iria 
+implementar.
+-O erro esta dando quando pegava a url sem a barra no final "/" .(Tem uma imagem mostrando o erro que 
+não consegui resolver ainda!)
+
+Segunda dificuldade foi modificar os botões:
+-Tententei drawable tipo shape, tipo selector, tentei mudando o tema(theme), funcionou para os botões 
+confirmar e pagamento, o botão saída tive que fazer através de imagembutton mudando as imagens.
+-Não deixei perfeito a imagem como gostaria, porém o projeto é uma exemplificação, preferi investir mais 
+tempo buscando respostas para API post com header e body e outras partes.
+
+Terceira
+-Botão close da Nav view e drawer, ao clicar fechava a aplicação então preferi fazer com uma activity que 
+preenche toda a tela e fecha tranquilamente.
+
+Quarta passar dados de fragment para activity
+-Nunca usei fragment e nem tabs, aprendi bastante.
+
+Quinta enviar os dados para o github ou bitbucket
+-Sempre da conflito. Criei até um novo repositório do zero e continua dando erro de autenticação.
+-Modifiquei o usuario no bash, etc, e nada. Sigo tentando até as 24h de hoje do dia 15 para ver se 
+consigo enviar no repositório como foi pedido.
+
+

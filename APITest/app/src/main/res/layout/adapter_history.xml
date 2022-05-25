@@ -1,0 +1,90 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appTools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="15dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+<!-- cardview adapter modificado agosto/2020-->
+    <RelativeLayout
+        android:id="@+id/root_layout_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_shadow_end_color"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="382dp"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="382dp"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCurrentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="TEMPO ATUAL"
+                    android:textColor="@color/parking_darkgray"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="PAGAMENTO"
+                    android:textColor="@color/parking_darkgray"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtTime1"
+                    android:layout_width="26dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="1h20 min"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtStatusPayment1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:text="    --" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

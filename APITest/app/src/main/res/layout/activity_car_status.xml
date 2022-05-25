@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/parking_gray"
+    tools:context=".activity.CarStatusActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <ImageView
+                android:id="@+id/img_CarStatus"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/txtLincese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:text="PLACA"
+                android:textColor="@color/parking_darkgray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtNumberLincence1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="ABC-1234"
+                android:textColor="@color/parking_menu"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:text="STATUS"
+                android:textColor="@color/parking_darkgray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTypeStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Estacionado"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/txtCurrentTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:text="TEMPO ATUAL"
+                android:textColor="@color/parking_darkgray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="1h20 min"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/txtPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:text="PAGAMENTO"
+                android:textColor="@color/parking_darkgray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtStatusPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+        </LinearLayout>
+    </ScrollView><TextView
+        android:id="@+id/textViewRenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="287dp"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>

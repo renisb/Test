@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="339dp"
+    android:layout_height="294dp"
+    android:id="@+id/layoutConf2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="#4A4A4A"
+        android:gravity="center"
+        android:text="Confirma o pagamento da placa abaixo?"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/txtAlertPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="8"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:text="AAA-0000"
+        android:textColor="@color/parking_menu"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnAlertConfirm"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_enabled_payment"
+        android:text="Confirmar"
+        android:padding="7dp"
+        android:textSize="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/txtAlertBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/parking_menu"
+        android:text="VOLTAR"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>
+<!--
+https://stackoverflow.com/questions/6276501/how-to-put-an-image-in-an-alertdialog-android
+-->

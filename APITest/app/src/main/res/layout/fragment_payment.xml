@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.PaymentFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:paddingLeft="70px"
+        android:paddingRight="70px">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Numero da Palca"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/etLicense1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="8"
+            android:background="@drawable/shape_edit_lincense"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:hint="AAA-0000"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:backgroundTint="@color/button_enabled_payment"
+            android:background="@drawable/selector_btn_enabled_payment"
+            android:text="Pagamento"
+            android:padding="14dp"
+            android:textSize="17dp"
+            android:theme="@style/Button.Purple"
+            android:layout_marginBottom="25dp"/>
+
+
+        <!--<Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:textColor=""
+            android:background="@drawable/shape_btn_enable_exit"
+            android:text="Saída"
+            android:padding="14dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="35dp"/>-->
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:enabled="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_btn_disabled_exit"
+            android:text="Saída"
+            android:textSize="17dp"
+            android:background="@drawable/shape_btn_enable_exit"
+            android:textColor="@color/textExit"
+            android:backgroundTint="@color/button_enabled_payment"
+            android:theme="@style/Button.White"
+            />
+
+        <TextView
+            android:id="@+id/txtVer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VER HISTÓRICO"
+            android:enabled="false"
+            android:textColor="@color/parking_menu"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+</FrameLayout>
